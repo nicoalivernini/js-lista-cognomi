@@ -19,5 +19,8 @@ for (var i = 0; i < listaCognomi.length; i++) {
   document.getElementById('lista-cognomi').innerHTML += "<li>" + listaCognomi[i] + "</li>"
 }
 
+//Dichiaro la variabile per dare la posizione umana
+var conteggioUmano = listaCognomi.indexOf(cognomeUtente) + 1;
+
 //Scrivo la posizione umana della lista
-document.getElementById('posizione-cognome').innerHTML = "Il tuo cognome è il numero: " + listaCognomi.indexOf(cognomeUtente)
+document.getElementById('posizione-cognome').innerHTML = "Il tuo cognome è il numero: " + conteggioUmano
