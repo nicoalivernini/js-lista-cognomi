@@ -6,6 +6,8 @@
 //Chiedo cognome
 var cognomeUtente = prompt("Inserisci il tuo cognome");
 
+cognomeUtente = cognomeUtente[0].toUpperCase() + cognomeUtente.substring(1);
+
 //Creo array con altri cognomi
 var listaCognomi = ["Bianchi", "Rossi", "Perlari", "Lodigiani", "Mastrobattista", "Verdi", cognomeUtente];
 
@@ -18,6 +20,4 @@ for (var i = 0; i < listaCognomi.length; i++) {
 }
 
 //Scrivo la posizione umana della lista
-// console.log(listaCognome.value(););
-
-document.getElementById('posizione-cognome').innerHTML = "Il tuo cognome è: " + listaCognomi[cognomeUtente] + " posizione"
+document.getElementById('posizione-cognome').innerHTML = "Il tuo cognome è il numero: " + listaCognomi.indexOf(cognomeUtente)
