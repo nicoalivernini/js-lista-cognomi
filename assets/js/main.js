@@ -13,7 +13,11 @@ var listaCognomi = ["Bianchi", "Rossi", "Perlari", "Lodigiani", "Mastrobattista"
 listaCognomi.sort();
 
 //Stampo
-console.log(listaCognomi);
+for (var i = 0; i < listaCognomi.length; i++) {
+  document.getElementById('lista-cognomi').innerHTML += "<li>" + listaCognomi[i] + "</li>"
+}
 
 //Scrivo la posizione umana della lista
-console.log(listaCognome.value(););
+// console.log(listaCognome.value(););
+
+document.getElementById('posizione-cognome').innerHTML = "Il tuo cognome è: " + listaCognomi[cognomeUtente] + " posizione"
